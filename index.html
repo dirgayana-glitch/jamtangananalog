@@ -126,8 +126,6 @@ footer{text-align:center;padding:16px;font-size:12px;color:#666;padding-bottom:8
 
 <div class="topbar">⚡ FLASH SALE HARI INI — HEMAT Rp 185.000 + GRATIS ONGKIR + COD ⚡</div>
 
-<div class="live-view"><i></i> <span id="viewers">217</span> orang melihat sekarang</div>
-
 <!-- HERO -->
 <header class="hero">
   <div class="brand">D.G.C • LUXURY WATCH</div>
@@ -352,15 +350,6 @@ setInterval(()=>{
   document.getElementById('m').textContent=m;
   document.getElementById('s').textContent=s;
 },1000);
-
-// Live viewers
-setInterval(()=>{
-  const v=document.getElementById('viewers');
-  let n=parseInt(v.textContent);
-  n+=Math.floor(Math.random()*5)-2;
-  if(n<180)n=200;if(n>260)n=240;
-  v.textContent=n;
-},4000);
 
 // Social proof notifications
 const imgPool=[...document.querySelectorAll('.gallery img, .hero-img img')].map(i=>i.src);
